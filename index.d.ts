@@ -1696,6 +1696,7 @@ interface GameControlsMp {
 	setPadShake(p0: number, duration: number, frequency: number): void;
 	setPlayerpadShakesWhenControllerDisabled(toggle: boolean): void;
 	stopPadShake(p0: any): void;
+  useDefaultVehicleEntering: boolean;
 }
 
 interface GameCutsceneMp {
