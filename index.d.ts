@@ -1688,7 +1688,7 @@ interface GameControlsMp {
 	isControlReleased(inputGroup: number, control: number): boolean;
 	isDisabledControlJustPressed(inputGroup: number, control: number): boolean;
 	isDisabledControlJustReleased(inputGroup: number, control: number): boolean;
-	isDisabledControlPressed(inputGroup: number, control: number): boolean;
+  isDisabledControlPressed(inputGroup: number, control: number): boolean;
 	isInputDisabled(inputGroup: number): boolean;
 	isInputJustDisabled(inputGroup: number): boolean;
 	setControlNormal(inputGroup: number, control: number, amount: number): boolean;
