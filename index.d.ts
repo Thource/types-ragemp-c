@@ -3356,6 +3356,9 @@ interface Vector3Mp {
   add(vector: Vector3Mp): Vector3Mp;
 	subtract(n: number): Vector3Mp;
   subtract(vector: Vector3Mp): Vector3Mp;
+
+  length(): number;
+  unit(): Vector3Mp;
 }
 
 type QuaternionMp = {
