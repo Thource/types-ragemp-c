@@ -3352,6 +3352,10 @@ interface Vector3Mp {
 	multiply(vector: Vector3Mp): Vector3Mp;
 	divide(n: number): Vector3Mp;
   divide(vector: Vector3Mp): Vector3Mp;
+	add(n: number): Vector3Mp;
+  add(vector: Vector3Mp): Vector3Mp;
+	subtract(n: number): Vector3Mp;
+  subtract(vector: Vector3Mp): Vector3Mp;
 }
 
 type QuaternionMp = {
