@@ -361,6 +361,7 @@ interface PedMp extends EntityMp {
   spawnPosition: Vector3Mp;
 
   clearFacialDecorations(): void;
+  clearProp(propId: number): void;
   setComponentVariation(componentId: number, drawableId: number, textureId: number, paletteId: number): void;
   setEyeColor(index: number): void;
   setFaceFeature(index: number, scale: number): void;
@@ -370,7 +371,9 @@ interface PedMp extends EntityMp {
                    skinSecondID: number, skinThirdID: number, shapeMix: number, skinMix: number, thirdMix: number, isParent: boolean): void;
   setHeadOverlay(overlayID: number, index: number, opacity: number, firstColor: number, secondColor: number): void;
   setHeadOverlayColor(overlayID: number, colorType: number, colorID: number, secondColorID: number): void;
+  setPosition(position: Vector3Mp): void;
   setPropIndex(componentId: number, drawableId: number, TextureId: number, attach: boolean): void;
+	updateHeadBlendData(shapeMix: number, skinMix: number, thirdMix: number): void;
 
 	taskPlayAnim(animDictionary: string, animationName: string, speed: number, speedMultiplier: number, duration: number,
 							 flag: number, playbackRate: number, lockX: boolean, lockY: boolean, lockZ: boolean): void;
